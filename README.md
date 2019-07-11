@@ -13,6 +13,7 @@ Prospects interested in a Institution's Transfer Equivalencies, Applicants, Inte
 * Team Leader:
 * List of Contributors:
 Ethan Savage
+Dave Lea
 
 ### Project Team Accomplishments
 What did the Project Team accomplished during the Sprint?
