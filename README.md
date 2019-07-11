@@ -1,12 +1,21 @@
-# transfer-equivalency
+#Project Team
 
-Add a brief description of this project here, in Markdown format.
-It will be shown on the main page of the project's GitHub repository.
+   # Team Leader:
+    List of Contributors:
+        Ethan Savage
+        Dave Lea
 
-## Development
+    Ethan Savage
+    Tiago Ruivo
+    Robert Watson
+    Margaret Fako
+    Ryan Klein
+    Zach Field
+    Scott Lieberman
+    Corey Rittvo
+    Dave Lea
+    Hailey Gould
 
-To work on this project in a scratch org:
+#Project Team Accomplishments
 
-1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/tutorial.html)
-2. Run `cci flow run dev_org --org dev` to deploy this project.
-3. Run `cci org browser dev` to open the org in your browser.
+#What did the Project Team accomplished during the Sprint?
