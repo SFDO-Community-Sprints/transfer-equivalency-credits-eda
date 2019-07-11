@@ -1,5 +1,3 @@
-### Click the Edit button and then copy & paste the Project README template below into your Project Repository README.md file.
-***
 
 ### Project Name
 Choose a self-explaining name for your project.
