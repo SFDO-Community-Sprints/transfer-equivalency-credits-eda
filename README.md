@@ -1,17 +1,18 @@
 
 ### Project Name
-Choose a self-explaining name for your project.
+Transfer Equivalency For All
 
 ### Project Description
 Let people know what your project can do and the intended benefits. 
 
 ### Project Audience
-Indicate who would find the most value in the use of this project.
+Prospects interested in a Institution's Transfer Equivalencies, Applicants, Internal Staff 
 
 ### Project Team
 
 * Team Leader:
 * List of Contributors:
+Ethan Savage
 
 ### Project Team Accomplishments
 What did the Project Team accomplished during the Sprint?
