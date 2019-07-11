@@ -9,11 +9,16 @@ Let people know what your project can do and the intended benefits.
 Prospects interested in a Institution's Transfer Equivalencies, Applicants, Internal Staff 
 
 ### Project Team
-
-* Team Leader:
-* List of Contributors:
-  - Ethan Savage
-  - Dave Lea
+* Ethan Savage
+* Tiago Ruivo
+* Robert Watson
+* Margaret Fako
+* Ryan Klein
+* Zach Field
+* Scott Lieberman
+* Corey Rittvo
+* Dave Lea
+* Hailey Gould
 
 ### Project Team Accomplishments
 What did the Project Team accomplished during the Sprint?
