@@ -1,10 +1,7 @@
-#Project Team
+Project Team
 
    Team Leader:
     List of Contributors:
-        Ethan Savage
-        Dave Lea
-
     Ethan Savage
     Tiago Ruivo
     Robert Watson
@@ -16,6 +13,6 @@
     Dave Lea
     Hailey Gould
 
-#Project Team Accomplishments
+Project Team Accomplishments
 
-#What did the Project Team accomplished during the Sprint?
+What did the Project Team accomplished during the Sprint?
