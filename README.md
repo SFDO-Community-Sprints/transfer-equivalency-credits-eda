@@ -1,6 +1,6 @@
 #Project Team
 
-   # Team Leader:
+   Team Leader:
     List of Contributors:
         Ethan Savage
         Dave Lea
