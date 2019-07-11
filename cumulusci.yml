@@ -1,0 +1,25 @@
+minimum_cumulusci_version: '2.5.4'
+project:
+    name: transfer-equivalency
+    package:
+        name:  Transfer Equivalency
+        api_version: '46.0'
+    dependencies:
+        - github: 'https://github.com/SalesforceFoundation/EDA'
+
+tasks:
+    robot:
+        options:
+            suites: robot/transfer-equivalency/tests
+            options:
+                outputdir: robot/transfer-equivalency/results
+
+    robot_testdoc:
+        options:
+            path: robot/transfer-equivalency/tests
+            output: robot/transfer-equivalency/doc/transfer-equivalency_tests.html
+
+flows:
+    config_qa:
+        1.1:
+            task: deploy_qa_config

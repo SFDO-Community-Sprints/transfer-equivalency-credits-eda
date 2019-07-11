@@ -1,30 +1,12 @@
+# transfer-equivalency
 
-### Project Name
-Transfer Equivalency For All
+Add a brief description of this project here, in Markdown format.
+It will be shown on the main page of the project's GitHub repository.
 
-### Project Description
-Let people know what your project can do and the intended benefits. 
+## Development
 
-### Project Audience
-Prospects interested in a Institution's Transfer Equivalencies, Applicants, Internal Staff 
+To work on this project in a scratch org:
 
-### Project Team
-* Ethan Savage
-* Tiago Ruivo
-* Robert Watson
-* Margaret Fako
-* Ryan Klein
-* Zach Field
-* Scott Lieberman
-* Corey Rittvo
-* Dave Lea
-* Hailey Gould
-
-### Project Team Accomplishments
-What did the Project Team accomplished during the Sprint?
-
-### Contributing
-If someone were to contribute to this project at the next Sprint what would you want them to work on to move this project forward?
-
-### Project Roadmap
-What is the ultimate vision for this project?
+1. [Set up CumulusCI](https://cumulusci.readthedocs.io/en/latest/tutorial.html)
+2. Run `cci flow run dev_org --org dev` to deploy this project.
+3. Run `cci org browser dev` to open the org in your browser.
