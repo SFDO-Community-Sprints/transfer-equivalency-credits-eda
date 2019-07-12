@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transfer Equivalency</fullName>
+    <types>
+        <members>Course_Transfer__c.Credits__c</members>
+        <members>Course_Transfer__c.End_Date__c</members>
+        <members>Course_Transfer__c.External_Course__c</members>
+        <members>Course_Transfer__c.Grade_Requirement__c</members>
+        <members>Course_Transfer__c.Plan_Requirement__c</members>
+        <members>Course_Transfer__c.Start_Date__c</members>
+        <members>Course_Transfer__c.Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Course_Transfer__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Course_Transfer__c</members>
+        <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Course_Transfer__c-Course Transfer Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Course_Transfer__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Accounts_with_Courses_with_Course_Transfers</members>
+        <name>ReportType</name>
+    </types>
+    <version>46.0</version>
+</Package>
