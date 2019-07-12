@@ -29,6 +29,10 @@
         <name>ListView</name>
     </types>
     <types>
+        <members>hed__Course__c.External</members>
+        <name>RecordType</name>
+    </types>
+    <types>
         <members>Accounts_with_Courses_with_Course_Transfers</members>
         <name>ReportType</name>
     </types>
