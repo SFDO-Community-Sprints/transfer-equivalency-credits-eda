@@ -154,6 +154,18 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <fields>
+        <fullName>Course__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Course</label>
+        <referenceTo>hed__Course__c</referenceTo>
+        <relationshipLabel>Course Transfers (Course)</relationshipLabel>
+        <relationshipName>Course_Transfers1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Credits__c</fullName>
         <description>TBD</description>
         <externalId>false</externalId>
@@ -262,6 +274,16 @@
                     <fullName>Accepted</fullName>
                     <default>false</default>
                     <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
