@@ -15,7 +15,6 @@
         <members>Course_Transfer__c.Plan_Requirement__c</members>
         <members>Course_Transfer__c.Start_Date__c</members>
         <members>Course_Transfer__c.Status__c</members>
-        <members>hed__Course__c.External_Course_Institution__c</members>
         <name>CustomField</name>
     </types>
     <types>
@@ -43,6 +42,10 @@
     <types>
         <members>Accounts_with_Courses_with_Course_Transfers</members>
         <name>ReportType</name>
+    </types>
+    <types>
+        <members>Course_Transfer__c.Course_or_Plan_Requirement_Not_Both</members>
+        <name>ValidationRule</name>
     </types>
     <version>46.0</version>
 </Package>

@@ -272,5 +272,16 @@
     <pluralLabel>Course Transfers</pluralLabel>
     <searchLayouts/>
     <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Course_or_Plan_Requirement_Not_Both</fullName>
+        <active>true</active>
+        <description>Specify a Course or Plan Requirement that the external course transfers into, but not both.</description>
+        <errorConditionFormula>NOT (ISBLANK (Course__c))
+
+&amp;&amp;
+
+NOT (ISBLANK(Plan_Requirement__c))</errorConditionFormula>
+        <errorMessage>Specify a Course or Plan Requirement that the external course transfers into, but not both.</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

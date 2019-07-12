@@ -1,32 +1,33 @@
 ### Project Name
-Transfer Equivalency For All
+Transfer Equivalency for All
 
 ### Project Description
-Let people know what your project can do and the intended benefits. 
+When students want to transfer from one instution to another, they want to know how their course history will transfer to equivalent course credit at the desired institution. This project creates a schema to capture the information about transfer equivalency: details about the course at the originating institution, details about the course at the destination institution, how many transfer credits a course is worth, and a history of equivalency attempts and successes.
 
 ### Project Audience
-Indicate who would find the most value in the use of this project.
+Institutions that receive requests for transfer credit from prospective students and applicants.
 
 ### Project Team
 
 * Team Leader:
 * List of Contributors:
-    Ethan Savage
-    Tiago Ruivo
-    Robert Watson
-    Margaret Fako
-    Ryan Klein
-    Zach Field
-    Scott Lieberman
-    Corey Rittvo
-    Dave Lea
-    Hailey Gould
+    * Ethan Savage
+    * Tiago Ruivo
+    * Robert Watson
+    * Margaret Fako
+    * Ryan Klein
+    * Zach Field
+    * Scott Lieberman
+    * Corey Rittvo
+    * Dave Lea
+    * Haley Gould
+    * Victoria Tang
     
 ### Project Team Accomplishments
-What did the Project Team accomplished during the Sprint?
+The project created a schema, some record types, and an outline of the setup guide.
 
 ### Contributing
-If someone were to contribute to this project at the next Sprint what would you want them to work on to move this project forward?
+* See the Issues tab for open enhancements. Feel free to add additional suggestions and use cases!
 
 ### Project Roadmap
-What is the ultimate vision for this project?
+Students will be able to see how their courses transfer to the destination institution. This database of transfer equivalencies is exposed to students so students can "window shop" to see how their existing credits could transfer to different institutions.
