@@ -3,6 +3,7 @@
     <fullName>Transfer Equivalency</fullName>
     <types>
         <members>TE_CourseSearchUtil</members>
+        <members>TE_CourseSearchUtil_Test</members>
         <members>TE_TransferCreditSearchController</members>
         <name>ApexClass</name>
     </types>
