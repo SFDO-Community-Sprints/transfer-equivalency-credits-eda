@@ -20,15 +20,14 @@ Institutions that receive requests for transfer credit from prospective students
     * Scott Lieberman
     * Corey Rittvo
     * Dave Lea
-    * Hailey Gould
+    * Haley Gould
     * Victoria Tang
     
 ### Project Team Accomplishments
 The project created a schema, some record types, and an outline of the setup guide.
 
 ### Contributing
-* Continue to add to the sample data set.
-* Mock up an externally visible interface (VisualForce?) that exposes the transfer credit equivalencies.
+* See the Issues tab for open enhancements. Feel free to add additional suggestions and use cases!
 
 ### Project Roadmap
 Students will be able to see how their courses transfer to the destination institution. This database of transfer equivalencies is exposed to students so students can "window shop" to see how their existing credits could transfer to different institutions.
