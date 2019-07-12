@@ -3,6 +3,7 @@
     <fullName>Transfer Equivalency</fullName>
     <types>
         <members>TE_CourseSearchUtil</members>
+        <members>TE_TransferCreditSearchController</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -23,12 +24,21 @@
     </types>
     <types>
         <members>Course_Transfer__c</members>
+        <members>Transfer_Credit_Search</members>
         <name>CustomTab</name>
+    </types>
+    <types>
+        <members>Transfer_Credit_Search</members>
+        <name>FlexiPage</name>
     </types>
     <types>
         <members>Course_Transfer__c-Course Transfer Layout</members>
         <members>hed__Course__c-HEDA External Course Layout</members>
         <name>Layout</name>
+    </types>
+    <types>
+        <members>te_transferCreditSearch</members>
+        <name>LightningComponentBundle</name>
     </types>
     <types>
         <members>Course_Transfer__c.All</members>
