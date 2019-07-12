@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
-        <fullName>External_Course_Institution__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <externalId>false</externalId>
-        <label>External Course Institution</label>
-        <referenceTo>Account</referenceTo>
-        <relationshipLabel>Courses (External Course Institution)</relationshipLabel>
-        <relationshipName>External_Courses</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
     <recordTypes>
         <fullName>External</fullName>
         <active>true</active>

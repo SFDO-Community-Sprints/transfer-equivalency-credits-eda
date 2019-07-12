@@ -15,7 +15,6 @@
         <members>Course_Transfer__c.Plan_Requirement__c</members>
         <members>Course_Transfer__c.Start_Date__c</members>
         <members>Course_Transfer__c.Status__c</members>
-        <members>hed__Course__c.External_Course_Institution__c</members>
         <name>CustomField</name>
     </types>
     <types>
