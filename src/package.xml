@@ -2,6 +2,7 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Transfer Equivalency</fullName>
     <types>
+        <members>Account.TE_Available_for_Course_Transfers__c</members>
         <members>Course_Transfer__c.Course__c</members>
         <members>Course_Transfer__c.Credits__c</members>
         <members>Course_Transfer__c.End_Date__c</members>
