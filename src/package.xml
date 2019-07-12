@@ -43,5 +43,9 @@
         <members>Accounts_with_Courses_with_Course_Transfers</members>
         <name>ReportType</name>
     </types>
+    <types>
+        <members>Course_Transfer__c.Course_or_Plan_Requirement_Not_Both</members>
+        <name>ValidationRule</name>
+    </types>
     <version>46.0</version>
 </Package>
