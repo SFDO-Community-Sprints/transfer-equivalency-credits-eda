@@ -19,6 +19,13 @@ tasks:
             path: robot/transfer-equivalency/tests
             output: robot/transfer-equivalency/doc/transfer-equivalency_tests.html
 
+    test_data_dev_org:
+        description: Loads a basic data set
+        class_path: cumulusci.tasks.bulkdata.LoadData
+        options:
+            database_url: sqlite:///dev_config/data/eda_data.db
+            mapping: dev_config/data/mapping.yml
+
 flows:
     config_qa:
         1.1:
