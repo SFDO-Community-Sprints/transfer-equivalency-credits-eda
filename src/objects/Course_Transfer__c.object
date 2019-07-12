@@ -246,36 +246,6 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Submitted</fullName>
-                    <default>false</default>
-                    <label>Submitted</label>
-                </value>
-                <value>
-                    <fullName>Matched</fullName>
-                    <default>false</default>
-                    <label>Matched</label>
-                </value>
-                <value>
-                    <fullName>Denied</fullName>
-                    <default>false</default>
-                    <label>Denied</label>
-                </value>
-                <value>
-                    <fullName>Pending Appeal</fullName>
-                    <default>false</default>
-                    <label>Pending Appeal</label>
-                </value>
-                <value>
-                    <fullName>Appeal Denied</fullName>
-                    <default>false</default>
-                    <label>Appeal Denied</label>
-                </value>
-                <value>
-                    <fullName>Accepted</fullName>
-                    <default>false</default>
-                    <label>Accepted</label>
-                </value>
-                <value>
                     <fullName>Active</fullName>
                     <default>false</default>
                     <label>Active</label>
