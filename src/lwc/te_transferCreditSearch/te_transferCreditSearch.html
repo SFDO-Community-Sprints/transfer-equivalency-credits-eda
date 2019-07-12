@@ -23,27 +23,33 @@
 
     <template if:true={isInstitutionSelected}>
         <div class="slds-m-bottom_small">
-                <lightning-card class="slds-m-top_small" title="Enter Course Information">
-                    <div class="slds-grid slds-gutters slds-wrap slds-p-horizontal_small">
-                        <div class="slds-col slds-size_1-of-2"> 
-                            <lightning-input name="courseName" label="Course Name"></lightning-input>
-                            <lightning-input name="courseNumber" label="Course Number"></lightning-input>
-                        </div>
-                        <div class="slds-col slds-size_1-of-2">
-                            <lightning-input name="courseCompletedDate" label="Completed Date" type="date"></lightning-input>
+            <lightning-card class="slds-m-top_small" title="Enter Course Information">
+                <div class="slds-grid slds-gutters slds-wrap slds-p-horizontal_small">
+                    <div class="slds-col slds-size_1-of-2"> 
                             <lightning-combobox
-                                name="courseStatus"
-                                label="Course Status"
-                                placeholder="Select Status"
-                                options={courseStatusOptions}>
-                            </lightning-combobox>
-                        </div>
+                            name="course"
+                            label="Course"
+                            value={selectedCourseId}
+                            placeholder="Select Course"
+                            onchange={onCourseChange}
+                            options={courseOptions}>
+                        </lightning-combobox>
                     </div>
-                </lightning-card>
-            </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input name="courseCompletedDate" label="Completed Date" type="date"></lightning-input>
+                        <lightning-combobox
+                            name="courseStatus"
+                            label="Course Status"
+                            placeholder="Select Status"
+                            options={courseStatusOptions}>
+                        </lightning-combobox>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
         
-            <div class="slds-m-bottom_small">
-                <lightning-button variant="brand" label="Search" title="Search"></lightning-button>
-            </div>
+        <div class="slds-m-bottom_small">
+            <lightning-button variant="brand" label="Search" title="Search"></lightning-button>
+        </div>
     </template>
 </template>

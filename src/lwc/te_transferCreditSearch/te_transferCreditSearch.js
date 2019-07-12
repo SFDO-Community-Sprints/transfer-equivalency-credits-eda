@@ -7,6 +7,7 @@ export default class Te_transferCreditSearch extends LightningElement {
     @track institutionOptions;
     @track courseOptions;
     @track selectedInstitutionId;
+    @track selectedCourseId;
 
     init() {
         getInstitutionOptions().then(result => {
@@ -35,9 +36,11 @@ export default class Te_transferCreditSearch extends LightningElement {
         ];
     }
 
-    onInstitutionChange() {
+    onInstitutionChange(event) {
         console.log('institution Id: ' + this.selectedInstitutionId);
-        getCourseOptions({institutionId : this.selectedInstitutionId}).then(result => {
+        console.log('institution Id: ' + event.detail.value);
+        this.selectedInstitutionId = event.detail.value;
+        getCourseOptions({institutionId : event.detail.value}).then(result => {
             console.log('course options: ' + JSON.stringify(result));
             this.courseOptions = result;
         }).catch( error => {
@@ -47,6 +50,11 @@ export default class Te_transferCreditSearch extends LightningElement {
                 this.showMessage( 'error', 'Error', 'We encountered an unexpected error.');
             }
         });
+    }
+
+    onCourseChange(event) {
+        console.log('course Id: ' + event.detail.value);
+        this.selectedCourseId = event.detail.value;
     }
 
     showMessage( msgType, msgTitle, msgBody) {
