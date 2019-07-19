@@ -7,21 +7,23 @@ When students want to transfer from one instution to another, they want to know 
 ### Project Audience
 Institutions that receive requests for transfer credit from prospective students and applicants.
 
+### Project Documentation
+Documentation can be found in the repository [wiki](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki)
+
 ### Project Team
 
-* Team Leader:
 * List of Contributors:
-    * Ethan Savage
-    * Tiago Ruivo
-    * Robert Watson
-    * Margaret Fako
-    * Ryan Klein
-    * Zach Field
-    * Scott Lieberman
-    * Corey Rittvo
-    * Dave Lea
-    * Haley Gould
-    * Victoria Tang
+    * [Ethan Savage](https://github.com/Ejsavage)
+    * [Tiago Ruivo](https://github.com/tiagoruivo)
+    * [Robert Watson](https://github.com/robertbwatson)
+    * [Margaret Fako](https://github.com/margaretfako)
+    * [Ryan Klein](https://github.com/kleinryan)
+    * [Zach Field](https://github.com/P0und-cake)
+    * [Scott Lieberman](https://github.com/ScottLiebermn)
+    * [Corey Rittvo](https://github.com/coreyrittvo)
+    * [Dave Lea](https://github.com/Dave-SFDO)
+    * [Haley Gould](https://github.com/haleymgould)
+    * [Victoria Tang](https://github.com/vtangToD)
     
 ### Project Team Accomplishments
 The project created a schema, some record types, and an outline of the setup guide.
