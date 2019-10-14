@@ -2,13 +2,18 @@
 Transfer Equivalency for All
 
 ### Project Description
-When students want to transfer from one instution to another, they want to know how their course history will transfer to equivalent course credit at the desired institution. This project creates a schema to capture the information about transfer equivalency: details about the course at the originating institution, details about the course at the destination institution, how many transfer credits a course is worth, and a history of equivalency attempts and successes.
+When students want to transfer from one institution to another, they want to know how their course history will transfer to equivalent course credit at the desired institution. This project creates a schema to capture the information about transfer equivalency: details about the course at the originating institution, details about the course at the destination institution, how many transfer credits a course is worth, a history of course transfer information, and other course details.
 
 ### Project Audience
 Institutions that receive requests for transfer credit from prospective students and applicants.
 
 ### Project Documentation
-Documentation can be found in the repository [wiki](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki)
+Documentation can be found in the repository [wiki](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki):
+* [Welcome to Transfer Equivalency](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki/Welcome-to-Transfer-Equivalency)
+* [Setup Transfer Equivalency](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki/Setup-Transfer-Equivalency)
+* [Use Cases](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki/Use-Cases)
+* [Entity Relationship Diagram](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki/Entity-Relationship-Diagram)
+* [Requirements Mapping & Process Flows](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki/Requirements-Mapping-&-Process-Flows)
 
 ### Project Team
 
@@ -26,10 +31,10 @@ Documentation can be found in the repository [wiki](https://github.com/SFDO-Spri
     * [Victoria Tang](https://github.com/vtangToD)
     
 ### Project Team Accomplishments
-The project created a schema, some record types, and an outline of the setup guide.
+In July 2019, the project team created a schema, some record types, and an outline of the setup guide.
 
 ### Contributing
-* See the Issues tab for open enhancements. Feel free to add additional suggestions and use cases!
+See the [Issues](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/issues) tab for open enhancements. Feel free to add additional suggestions and use cases!
 
 ### Project Roadmap
 Students will be able to see how their courses transfer to the destination institution. This database of transfer equivalencies is exposed to students so students can "window shop" to see how their existing credits could transfer to different institutions.
