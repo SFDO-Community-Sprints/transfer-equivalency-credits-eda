@@ -29,12 +29,14 @@ Documentation can be found in the repository [wiki](https://github.com/SFDO-Spri
     * [Dave Lea](https://github.com/Dave-SFDO)
     * [Haley Gould](https://github.com/haleymgould)
     * [Victoria Tang](https://github.com/vtangToD)
+    * [Kathy Zimmerman[(https://github.com/KathyZimmerman)
+    * [Matthew Blanski](https://github.com/MatthewBlanski)
     
 ### Project Team Accomplishments
 In July 2019, the project team created a schema, some record types, and an outline of the setup guide.
 
 ### Contributing
-See the [Issues](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/issues) tab for open enhancements. Feel free to add additional suggestions and use cases!
+See the [Issues](https://github.com/SFDO-Sprint-2019-Philadelphia/transfer-equivalency/issues) tab for open enhancements. Feel free to add additional suggestions and use cases!
 
 ### Project Roadmap
 Students will be able to see how their courses transfer to the destination institution. This database of transfer equivalencies is exposed to students so students can "window shop" to see how their existing credits could transfer to different institutions.
