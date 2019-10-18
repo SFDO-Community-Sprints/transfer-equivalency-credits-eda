@@ -53,6 +53,7 @@ Insert Courses:
             table: university_departments
             join_field: id
             value_field: sf_id
+    record_type: Internal
 
 Insert Program Plans:
     sf_object: hed__Program_Plan__c
@@ -116,11 +117,6 @@ Insert Plan Requirements Tier 2:
             table: courses
             join_field: id
             value_field: sf_id
-        hed__Program_Plan__c:
-            key_field: program_plan_id
-            table: program_plans
-            join_field: id
-            value_field: sf_id
 
 Insert Plan Requirements Tier 3:
     sf_object: hed__Plan_Requirement__c
@@ -143,11 +139,6 @@ Insert Plan Requirements Tier 3:
             table: courses
             join_field: id
             value_field: sf_id
-        hed__Program_Plan__c:
-            key_field: program_plan_id
-            table: program_plans
-            join_field: id
-            value_field: sf_id
 
 Insert Plan Requirements Tier 4:
     sf_object: hed__Plan_Requirement__c
@@ -168,10 +159,5 @@ Insert Plan Requirements Tier 4:
         hed__Course__c:
             key_field: course_id
             table: courses
-            join_field: id
-            value_field: sf_id
-        hed__Program_Plan__c:
-            key_field: program_plan_id
-            table: program_plans
             join_field: id
             value_field: sf_id
