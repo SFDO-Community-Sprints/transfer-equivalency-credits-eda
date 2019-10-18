@@ -1,6 +1,8 @@
 BEGIN TRANSACTION;
 CREATE TABLE educational_institutions (id integer PRIMARY KEY, sf_id VARCHAR(18), name VARCHAR(255));
 INSERT INTO educational_institutions VALUES(1,'0013C00000DLn6yQAD','Connected Campus University');
+INSERT INTO educational_institutions VALUES(2,'001R000001OZSyDIAX','Northern Virginia Community College (NVCC)');
+INSERT INTO educational_institutions VALUES(3,'001R000001OZSf4IAH','George Mason University');
 CREATE TABLE university_departments (id INTEGER PRIMARY KEY, sf_id VARCHAR(18), name VARCHAR(255), educational_institution_id INTEGER);
 INSERT INTO university_departments VALUES(1,'0013C00000DLn7r','Economics Department',1);
 INSERT INTO university_departments VALUES(2,'0013C00000DLnbd','English Department',1);
@@ -17,6 +19,8 @@ INSERT INTO university_departments VALUES(12,'0013C00000DLn9q','Biology Departme
 INSERT INTO university_departments VALUES(13,'0013C00000DLnty','Art Department',1);
 INSERT INTO university_departments VALUES(14,'0013C00000DLnty','Computer Science Department',1);
 INSERT INTO university_departments VALUES(15,'0013C00000DLp6vQAD','Orientation',1);
+INSERT INTO university_departments VALUES(16,'001R000001OZTJVIA5','Mathematics',2);
+INSERT INTO university_departments VALUES(17,'001R000001OZTo3IAH','Mathematics',2);
 CREATE TABLE academic_programs (id INTEGER PRIMARY KEY, sf_id VARCHAR(18), name VARCHAR(255), department_id INTEGER, description VARCHAR(255));
 INSERT INTO academic_programs VALUES(1,'0013C00000DLn7N','BS Economics',1,'This program gives students a framework to learn how to understand behaviors and trends in a complex world. Students will learn, how governments, institutions, and households make economic decisions and compare costs and benefits.');
 CREATE TABLE program_plans (id INTEGER PRIMARY KEY, sf_id VARCHAR(18), name VARCHAR(80), is_primary TINYINT, description VARCHAR(255), end_date DATE, start_date DATE, status VARCHAR(40), total_required_credits DECIMAL(3,3), program_id INTEGER);
@@ -62,6 +66,8 @@ INSERT INTO courses VALUES(37,'a063C000001YLsG','Introduction to Literature','LI
 INSERT INTO courses VALUES(38,'a063C000001YLsL','Experiencing Music','MUL 2010',3,'Examines how we experience music and how it teaches us about ourselves and our world. Illuminates how music both shapes and is shaped by social, political, national, and cultural forces. Music from around the world demonstrates a variety of musical experiences within historical and contemporary cultural settings.',7);
 INSERT INTO courses VALUES(39,'a063C000001YLsH','Art Appreciation: Global Perspectives','ARH 2000',3,NULL,13);
 INSERT INTO courses VALUES(40,'a063C000001YLri','Professional Writing in the Discipline','ENC 3254',3,'A communication course adjusted to a specific professional discipline, the discipline to be determined by need. Covers major elements of organizational communication with emphasis on composition of reports, proposals, letters and memos, manuals, and oral presentations. Course materials and assignments are relevant to the specific discipline.',2);
+CREATE TABLE courses_external (id INTEGER PRIMARY KEY, sf_id VARCHAR(18), name VARCHAR(80), course_id VARCHAR(255), credit_hours DECIMAL(3,3), extended_description CLOB, department_id INTEGER);
+INSERT INTO courses_external VALUES(1,'a0BR000000B1qvQMAR','Analytic Geometry and Calculus I','MATH 113',3,'',16);
 CREATE TABLE plan_requirements_tier1 (id INTEGER PRIMARY KEY, sf_id VARCHAR(18), name VARCHAR(80), category VARCHAR(40), credits DECIMAL(3,3), description VARCHAR(255), sequence DECIMAL(2,0), course_id INTEGER, program_plan_id INTEGER);
 INSERT INTO plan_requirements_tier1 VALUES(1,'a0B3C000003BUKN','Economics Major Requirements',NULL,NULL,NULL,1,NULL,1);
 INSERT INTO plan_requirements_tier1 VALUES(2,'a0B3C000003BUL1','University Gen Ed Requirements',NULL,NULL,NULL,2,NULL,1);
