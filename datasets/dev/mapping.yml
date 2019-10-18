@@ -55,6 +55,23 @@ Insert Courses:
             value_field: sf_id
     record_type: Internal
 
+Insert Courses:
+    sf_object: hed__Course__c
+    table: courses_external
+    fields:
+        Id: sf_id
+        Name: name
+        hed__Course_ID__c: course_id
+        hed__Credit_Hours__c: credit_hours
+        hed__Extended_Description__c: extended_description
+    lookups:
+        hed__Account__c:
+            key_field: department_id
+            table: university_departments
+            join_field: id
+            value_field: sf_id
+    record_type: External
+
 Insert Program Plans:
     sf_object: hed__Program_Plan__c
     table: program_plans
