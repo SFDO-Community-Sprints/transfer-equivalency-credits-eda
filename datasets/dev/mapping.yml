@@ -1,0 +1,163 @@
+### EDA Underpinnings
+
+# ACCOUNTS
+Insert Educational Institution Accounts:
+    sf_object: Account
+    table: educational_institutions
+    fields:
+        Id: sf_id
+        Name: name
+    record_type: Educational_Institution
+
+Insert University Department Accounts:
+    sf_object: Account
+    table: university_departments
+    fields:
+        Id: sf_id
+        Name: name
+    lookups:
+        ParentId:
+            key_field: educational_institution_id
+            table: educational_institutions
+            join_field: id
+            value_field: sf_id
+    record_type: University_Department
+
+Insert Academic Programs Accounts:
+    sf_object: Account
+    table: academic_programs
+    fields:
+        Id: sf_id
+        Name: name
+        Description: description
+    lookups:
+        ParentId:
+            key_field: department_id
+            table: university_departments
+            join_field: id
+            value_field: sf_id
+    record_type: Academic_Program
+
+Insert Courses:
+    sf_object: hed__Course__c
+    table: courses
+    fields:
+        Id: sf_id
+        Name: name
+        hed__Course_ID__c: course_id
+        hed__Credit_Hours__c: credit_hours
+        hed__Extended_Description__c: extended_description
+    lookups:
+        hed__Account__c:
+            key_field: department_id
+            table: university_departments
+            join_field: id
+            value_field: sf_id
+    record_type: Internal
+
+Insert Program Plans:
+    sf_object: hed__Program_Plan__c
+    table: program_plans
+    fields:
+        Id: sf_id
+        Name: name
+        hed__Is_Primary__c: is_primary
+        hed__Description__c: description
+        hed__End_Date__c: end_date
+        hed__Start_Date__c: start_date
+        hed__Status__c: status
+        hed__Total_Required_Credits__c: total_required_credits
+    lookups:
+        hed__Account__c:
+            key_field: program_id
+            table: academic_programs
+            join_field: id
+            value_field: sf_id
+
+Insert Plan Requirements Tier 1:
+    sf_object: hed__Plan_Requirement__c
+    table: plan_requirements_tier1
+    fields:
+        Id: sf_id
+        Name: name
+        hed__Category__c: category
+        hed__Credits__c: credits
+        hed__Description__c: description
+        hed__Sequence__c: sequence
+    lookups:
+        hed__Course__c:
+            key_field: course_id
+            table: courses
+            join_field: id
+            value_field: sf_id
+        hed__Program_Plan__c:
+            key_field: program_plan_id
+            table: program_plans
+            join_field: id
+            value_field: sf_id
+
+Insert Plan Requirements Tier 2:
+    sf_object: hed__Plan_Requirement__c
+    table: plan_requirements_tier2
+    fields:
+        Id: sf_id
+        Name: name
+        hed__Category__c: category
+        hed__Credits__c: credits
+        hed__Description__c: description
+        hed__Sequence__c: sequence
+    lookups:
+        hed__Plan_Requirement__c:
+            key_field: plan_requirement_tier1_id
+            table: plan_requirements_tier1
+            join_field: id
+            value_field: sf_id
+        hed__Course__c:
+            key_field: course_id
+            table: courses
+            join_field: id
+            value_field: sf_id
+
+Insert Plan Requirements Tier 3:
+    sf_object: hed__Plan_Requirement__c
+    table: plan_requirements_tier3
+    fields:
+        Id: sf_id
+        Name: name
+        hed__Category__c: category
+        hed__Credits__c: credits
+        hed__Description__c: description
+        hed__Sequence__c: sequence
+    lookups:
+        hed__Plan_Requirement__c:
+            key_field: plan_requirement_tier2_id
+            table: plan_requirements_tier2
+            join_field: id
+            value_field: sf_id
+        hed__Course__c:
+            key_field: course_id
+            table: courses
+            join_field: id
+            value_field: sf_id
+
+Insert Plan Requirements Tier 4:
+    sf_object: hed__Plan_Requirement__c
+    table: plan_requirements_tier4
+    fields:
+        Id: sf_id
+        Name: name
+        hed__Category__c: category
+        hed__Credits__c: credits
+        hed__Description__c: description
+        hed__Sequence__c: sequence
+    lookups:
+        hed__Plan_Requirement__c:
+            key_field: plan_requirement_tier3_id
+            table: plan_requirements_tier3
+            join_field: id
+            value_field: sf_id
+        hed__Course__c:
+            key_field: course_id
+            table: courses
+            join_field: id
+            value_field: sf_id
