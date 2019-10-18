@@ -53,6 +53,7 @@ Insert Courses:
             table: university_departments
             join_field: id
             value_field: sf_id
+    record_type: Internal
 
 Insert Program Plans:
     sf_object: hed__Program_Plan__c
