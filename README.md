@@ -29,7 +29,7 @@ Documentation can be found in the repository [wiki](https://github.com/SFDO-Spri
     * [Dave Lea](https://github.com/Dave-SFDO)
     * [Haley Gould](https://github.com/haleymgould)
     * [Victoria Tang](https://github.com/vtangToD)
-    * [Kathy Zimmerman[(https://github.com/KathyZimmerman)
+    * [Kathy Zimmerman](https://github.com/KathyZimmerman)
     * [Matthew Blanski](https://github.com/MatthewBlanski)
     
 ### Project Team Accomplishments
