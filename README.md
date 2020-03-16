@@ -7,6 +7,9 @@ When students want to transfer from one institution to another, they want to kno
 ### Project Audience
 Institutions that receive requests for transfer credit from prospective students and applicants.
 
+### Power of Us Hub Group
+Find us on the Power of Us Hub here: [Transfer Equivalency](https://powerofus.force.com/s/group/0F91E000000brOzSAI/transfer-equivalency)
+
 ### Project Documentation
 Documentation can be found in the repository [wiki](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki):
 * [Welcome to Transfer Equivalency](https://github.com/SFDO-Sprint-2019-Detroit/transfer-equivalency/wiki/Welcome-to-Transfer-Equivalency)
