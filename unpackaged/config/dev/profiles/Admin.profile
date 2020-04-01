@@ -96,7 +96,7 @@
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
-        <default>false</default>
+        <default>true</default>
         <recordType>hed__Course__c.Internal</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>

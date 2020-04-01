@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Course_Equivalency_Rule__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Rule that determines equivalency for a course</description>
+        <externalId>false</externalId>
+        <label>Course Equivalency Rule</label>
+        <referenceTo>Course_Equivalency_Rules__c</referenceTo>
+        <relationshipLabel>Courses</relationshipLabel>
+        <relationshipName>Courses</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <recordTypes>
         <fullName>External</fullName>
         <active>true</active>

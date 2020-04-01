@@ -9,6 +9,11 @@
     </types>
     <types>
         <members>Account.TE_Available_for_Course_Transfers__c</members>
+        <members>Course_Equivalency_Rules__c.Course__c</members>
+        <members>Course_Equivalency_Rules__c.External_Course__c</members>
+        <members>Course_Equivalency_Rules__c.Required_Grade__c</members>
+        <members>Course_Equivalency_Rules__c.Rule_End_Date__c</members>
+        <members>Course_Equivalency_Rules__c.Rule_Start_Date__c</members>
         <members>Course_Transfer__c.Course__c</members>
         <members>Course_Transfer__c.Credits__c</members>
         <members>Course_Transfer__c.End_Date__c</members>
@@ -17,10 +22,30 @@
         <members>Course_Transfer__c.Plan_Requirement__c</members>
         <members>Course_Transfer__c.Start_Date__c</members>
         <members>Course_Transfer__c.Status__c</members>
+        <members>Transcript_Course__c.Approval_Status__c</members>
+        <members>Transcript_Course__c.Awarded_Credit_Hour__c</members>
+        <members>Transcript_Course__c.Course_Equivalent__c</members>
+        <members>Transcript_Course__c.Course_to_be_Evaluated__c</members>
+        <members>Transcript_Course__c.End_Date__c</members>
+        <members>Transcript_Course__c.Start_Date__c</members>
+        <members>Transcript_Course__c.Term__c</members>
+        <members>Transcript_Course__c.Transcript__c</members>
+        <members>Transcript__c.Application__c</members>
+        <members>Transcript__c.Contact__c</members>
+        <members>Transcript__c.Credit_Hours__c</members>
+        <members>Transcript__c.Decision_Status__c</members>
+        <members>Transcript__c.Education_Institutions__c</members>
+        <members>Transcript__c.GPA__c</members>
+        <members>Transcript__c.Total_Awarded_Credit_Hours__c</members>
+        <members>hed__Application__c.Transcript_Evaluation_Status__c</members>
+        <members>hed__Course__c.Course_Equivalency_Rule__c</members>
         <name>CustomField</name>
     </types>
     <types>
+        <members>Course_Equivalency_Rules__c</members>
         <members>Course_Transfer__c</members>
+        <members>Transcript_Course__c</members>
+        <members>Transcript__c</members>
         <name>CustomObject</name>
     </types>
     <types>
@@ -33,7 +58,10 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>Course_Equivalency_Rules__c-Course Equivalency Rule Layout</members>
         <members>Course_Transfer__c-Course Transfer Layout</members>
+        <members>Transcript_Course__c-Transcript Course Layout</members>
+        <members>Transcript__c-Transcript Layout</members>
         <members>hed__Course__c-HEDA External Course Layout</members>
         <name>Layout</name>
     </types>
@@ -42,6 +70,7 @@
         <name>LightningComponentBundle</name>
     </types>
     <types>
+        <members>Course_Equivalency_Rules__c.All</members>
         <members>Course_Transfer__c.All</members>
         <name>ListView</name>
     </types>
