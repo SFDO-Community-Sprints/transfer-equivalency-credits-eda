@@ -20,19 +20,19 @@ Help us give you the thanks you deserve and ensure future contributors know who 
 
 Full Name       | Github Username                                      | Sprint(s)               
 ------------    | -------------                                        | -------------   
-Ethan Savage    | [Ejsavage](https://github.com/Ejsavage)              | Detroit
-Tiago Ruivo     | [tiagoruivo](https://github.com/tiagoruivo)          | Detroit
-Robert Watson   | [robertbwatson](https://github.com/robertbwatson)    | Detroit
-Margaret Fako   | [margaretfako](https://github.com/margaretfako)      | Detroit
-Ryan Klein      | [kleinryan](https://github.com/kleinryan)            | Detroit
-Zach Field      | [P0und-cake](https://github.com/P0und-cake)          | Detroit
-Scott Lieberman | [ScottLiebermnn](https://github.com/ScottLiebermn)   | Detroit
-Corey Rittvo    | [coreyrittvo](https://github.com/coreyrittvo)        | Detroit
-Dave Lea        | [Dave-SFDO](https://github.com/Dave-SFDO)            | Detroit
-Haley Gould     | [haleymgould](https://github.com/haleymgould)        | Detroit
-Victoria Tang   | [vtangToD](https://github.com/vtangToD)              | Detroit
-Kathy Zimmerman | [KathyZimmerman](https://github.com/KathyZimmerman)  | Detroit
-Matthew Blanski | [MatthewBlanski](https://github.com/MatthewBlanski)  | Detroit
+Ethan Savage    | [Ejsavage](https://github.com/Ejsavage)              | Detroit 2019
+Tiago Ruivo     | [tiagoruivo](https://github.com/tiagoruivo)          | Detroit 2019
+Robert Watson   | [robertbwatson](https://github.com/robertbwatson)    | Detroit 2019
+Margaret Fako   | [margaretfako](https://github.com/margaretfako)      | Detroit 2019
+Ryan Klein      | [kleinryan](https://github.com/kleinryan)            | Detroit 2019
+Zach Field      | [P0und-cake](https://github.com/P0und-cake)          | Detroit 2019
+Scott Lieberman | [ScottLiebermnn](https://github.com/ScottLiebermn)   | Detroit 2019
+Corey Rittvo    | [coreyrittvo](https://github.com/coreyrittvo)        | Detroit 2019
+Dave Lea        | [Dave-SFDO](https://github.com/Dave-SFDO)            | Detroit 2019
+Haley Gould     | [haleymgould](https://github.com/haleymgould)        | Detroit 2019
+Victoria Tang   | [vtangToD](https://github.com/vtangToD)              | Detroit 2019
+Kathy Zimmerman | [KathyZimmerman](https://github.com/KathyZimmerman)  | Detroit 2019
+Matthew Blanski | [MatthewBlanski](https://github.com/MatthewBlanski)  | Detroit 2019
 
 ### Project Vision (Please make this your first task as a team)
 
