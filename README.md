@@ -18,21 +18,21 @@ Help us give you the thanks you deserve and ensure future contributors know who 
 
 ### Past Project Team
 
-Full Name       | Sprint        | Github Username
-------------    | ------------- | -------------
-Ethan Savage    | Detroit       | [Ethan Savage](https://github.com/Ejsavage)
-Tiago Ruivo     | Detroit       | [Tiago Ruivo](https://github.com/tiagoruivo)
-Robert Watson   | Detroit       | [Robert Watson](https://github.com/robertbwatson)
-Margaret Fako   | Detroit       | [Margaret Fako](https://github.com/margaretfako)
-Ryan Klein      | Detroit       | [Ryan Klein](https://github.com/kleinryan)
-Zach Field      | Detroit       | [Zach Field](https://github.com/P0und-cake)
-Scott Lieberman | Detroit       | [Scott Lieberman](https://github.com/ScottLiebermn)
-Corey Rittvo    | Detroit       | [Corey Rittvo](https://github.com/coreyrittvo)
-Dave Lea        | Detroit       | [Dave Lea](https://github.com/Dave-SFDO)
-Haley Gould     | Detroit       | [Haley Gould](https://github.com/haleymgould)
-Victoria Tang   | Detroit       | [Victoria Tang](https://github.com/vtangToD)
-Kathy Zimmerman | Detroit       | [Kathy Zimmerman](https://github.com/KathyZimmerman)
-Matthew Blanski | Detroit       | [Matthew Blanski](https://github.com/MatthewBlanski)
+Full Name       | Github Username                                      | Sprint(s)               
+------------    | -------------                                        | -------------   
+Ethan Savage    | [Ejsavage](https://github.com/Ejsavage)              | Detroit
+Tiago Ruivo     | [tiagoruivo](https://github.com/tiagoruivo)          | Detroit
+Robert Watson   | [robertbwatson](https://github.com/robertbwatson)    | Detroit
+Margaret Fako   | [margaretfako](https://github.com/margaretfako)      | Detroit
+Ryan Klein      | [kleinryan](https://github.com/kleinryan)            | Detroit
+Zach Field      | [P0und-cake](https://github.com/P0und-cake)          | Detroit
+Scott Lieberman | [ScottLiebermnn](https://github.com/ScottLiebermn)   | Detroit
+Corey Rittvo    | [coreyrittvo](https://github.com/coreyrittvo)        | Detroit
+Dave Lea        | [Dave-SFDO](https://github.com/Dave-SFDO)            | Detroit
+Haley Gould     | [haleymgould](https://github.com/haleymgould)        | Detroit
+Victoria Tang   | [vtangToD](https://github.com/vtangToD)              | Detroit
+Kathy Zimmerman | [KathyZimmerman](https://github.com/KathyZimmerman)  | Detroit
+Matthew Blanski | [MatthewBlanski](https://github.com/MatthewBlanski)  | Detroit
 
 ### Project Vision (Please make this your first task as a team)
 
