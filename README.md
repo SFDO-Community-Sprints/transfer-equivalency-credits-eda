@@ -12,9 +12,9 @@ https://powerofus.force.com/s/group/0F91E000000brOzSAI/transfer-equivalency
 
 ### Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
-* Team Leader(s): 
+* Team Leader(s): Eric Kenney, eric@erickenney.com, https://github.com/IAmEricKenney
 * GitHub Scribe(s): 
-* List of all Contributors:
+* List of all Contributors: Starley Flynn, Kim Schaefges, Corey Snow, Marc Beaulieu, Jace Bryan
 
 ### Past Project Team
 
@@ -49,6 +49,8 @@ Documentation can be found in the repository [wiki](https://github.com/SFDO-Comm
 
 ### Current Project Team Accomplishments
 What did the Project Team get done during the Sprint?
+March 2020: Updated the schema from July 2019 using my EDA objects. Included Application, Course with new recordtype (External), as well as Contact and Account (Education Institution record type). Built 3 custom objects: Transcript, Transcript Course, and Course Equivalency Rule.
+Transcript is a parent for Transcript Course. Transcript Course has a double look up to Course. Course Equivalency Rule is the object that matches an external course with the approved internal course.
 
 ### Project Team Accomplishments (YTD)
 * In July 2019, the project team created a schema, some record types, and an outline of the setup guide.
