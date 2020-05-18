@@ -12,9 +12,9 @@ https://powerofus.force.com/s/group/0F91E000000brOzSAI/transfer-equivalency
 
 ### Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
-* Team Leader(s): Eric Kenney, eric@erickenney.com, https://github.com/IAmEricKenney
+* Team Leader(s): [Eric Kenney](https://github.com/IAmEricKenney)
 * GitHub Scribe(s): 
-* List of all Contributors: Starley Flynn, Kim Schaefges, Corey Snow, Marc Beaulieu, Jace Bryan
+* List of all Contributors: [Starley Flynn](https://github.com/StarleyFlynn), [Kim Schaefges](https://github.com/kschaefges), [Corey Snow](https://github.com/csnow-storm), [Marc Beaulieu](https://github.com/SoundSkulptor), [Jace Bryan](https://github.com/jacebryan)
 
 ### Past Project Team
 
