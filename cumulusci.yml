@@ -1,54 +1,54 @@
-minimum_cumulusci_version: '2.5.4'
+minimum_cumulusci_version: "2.5.4"
 project:
-    name: transfer-equivalency
-    package:
-        name:  Transfer Equivalency
-        api_version: '46.0'
-    dependencies:
-        - github: 'https://github.com/SalesforceFoundation/EDA'
+  name: transfer-equivalency
+  package:
+    name: Transfer Equivalency
+    api_version: "51.0"
+  dependencies:
+    - github: "https://github.com/SalesforceFoundation/EDA"
 
 tasks:
-    deploy_dev_config:
-        group: 'Transfer Equivalency Config'
-        description: Deploys configuration for Development from /unpackaged/config/dev
-        class_path: cumulusci.tasks.salesforce.Deploy
-        options:
-            namespace_inject: $project_config.project__package__namespace
-            path: unpackaged/config/dev
-            unmanaged: True
+  deploy_dev_config:
+    group: "Transfer Equivalency Config"
+    description: Deploys configuration for Development from /unpackaged/config/dev
+    class_path: cumulusci.tasks.salesforce.Deploy
+    options:
+      namespace_inject: $project_config.project__package__namespace
+      path: unpackaged/config/dev
+      unmanaged: True
 
-    robot:
-        options:
-            suites: robot/transfer-equivalency/tests
-            options:
-                outputdir: robot/transfer-equivalency/results
+  robot:
+    options:
+      suites: robot/transfer-equivalency/tests
+      options:
+        outputdir: robot/transfer-equivalency/results
 
-    robot_testdoc:
-        options:
-            path: robot/transfer-equivalency/tests
-            output: robot/transfer-equivalency/doc/transfer-equivalency_tests.html
+  robot_testdoc:
+    options:
+      path: robot/transfer-equivalency/tests
+      output: robot/transfer-equivalency/doc/transfer-equivalency_tests.html
 
-    test_data_dev_org:
-        group: 'Transfer Equivalency Config'
-        description: Loads a basic data set for most EDA objects
-        class_path: cumulusci.tasks.bulkdata.LoadData
-        options:
-            sql_path: datasets/dev/test_data.sql
-            mapping: datasets/dev/mapping.yml
+  test_data_dev_org:
+    group: "Transfer Equivalency Config"
+    description: Loads a basic data set for most EDA objects
+    class_path: cumulusci.tasks.bulkdata.LoadData
+    options:
+      sql_path: datasets/dev/test_data.sql
+      mapping: datasets/dev/mapping.yml
 
 flows:
-    config_dev:
-        steps:
-           3:
-               task: deploy_dev_config
+  config_dev:
+    steps:
+      3:
+        task: deploy_dev_config
 
-    config_qa:
-        1.1:
-            task: deploy_qa_config
+  config_qa:
+    1.1:
+      task: deploy_qa_config
 
-    dev_org_with_data:
-        steps:
-           1:
-               flow: dev_org
-           2:
-               task: test_data_dev_org
+  dev_org_with_data:
+    steps:
+      1:
+        flow: dev_org
+      2:
+        task: test_data_dev_org
