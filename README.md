@@ -2,7 +2,7 @@
 Transfer Equivalency
 
 ### Project Theme
-This project is an app meant to help institutions search for course and credit transfer equivalency between institutions.
+This project is an app meant to help students and institutions search for course and credit transfer equivalency between institutions.
 
 ### Project Vertical
 Education
@@ -12,6 +12,9 @@ https://powerofus.force.com/s/group/0F91E000000brOzSAI/transfer-equivalency
 
 ### Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
+* Team Leader(s): Kathy Lueckeman (https://github.com/Kathy-Lueckeman)
+
+From past sprints:
 * Team Leader(s): [Eric Kenney](https://github.com/IAmEricKenney)
 * GitHub Scribe(s): 
 * List of all Contributors: [Starley Flynn](https://github.com/StarleyFlynn), [Kim Schaefges](https://github.com/kschaefges), [Corey Snow](https://github.com/csnow-storm), [Marc Beaulieu](https://github.com/SoundSkulptor), [Jace Bryan](https://github.com/jacebryan)
@@ -47,7 +50,10 @@ Documentation can be found in the repository [wiki](https://github.com/SFDO-Comm
 * [Entity Relationship Diagram](https://github.com/SFDO-Community-Sprints/transfer-equivalency/wiki/Entity-Relationship-Diagram)
 * [Requirements Mapping & Process Flows](https://github.com/SFDO-Community-Sprints/transfer-equivalency/wiki/Requirements-Mapping-&-Process-Flows)
 
-### Current Project Team Accomplishments
+### Current 
+
+### Past
+Project Team Accomplishments
 What did the Project Team get done during the Sprint?
 March 2020: Updated the schema from July 2019 using my EDA objects. Included Application, Course with new recordtype (External), as well as Contact and Account (Education Institution record type). Built 3 custom objects: Transcript, Transcript Course, and Course Equivalency Rule.
 Transcript is a parent for Transcript Course. Transcript Course has a double look up to Course. Course Equivalency Rule is the object that matches an external course with the approved internal course.
