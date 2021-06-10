@@ -46,6 +46,8 @@ flows:
     steps:
       1.1:
         task: deploy_qa_config
+      2.1:
+        task: test_data_dev_org
 
   dev_org:
     steps:
