@@ -30,7 +30,7 @@ tasks:
 
   test_data_dev_org:
     group: "Transfer Equivalency Config"
-    description: Loads a basic data set for most EDA objects
+    description: Loads a basic data set for EDA and Transfer Equivalency objects
     class_path: cumulusci.tasks.bulkdata.LoadData
     options:
       sql_path: datasets/dev/test_data.sql
@@ -43,12 +43,25 @@ flows:
         task: deploy_dev_config
 
   config_qa:
-    1.1:
-      task: deploy_qa_config
+    steps:
+      1.1:
+        task: deploy_qa_config
 
-  dev_org_with_data:
+  dev_org:
+    steps:
+      3.1:
+        task: test_data_dev_org
+
+  update_test_data:
+    description: Pulls the dataset mapping and data from the current org and saves it to the dev dataset folder
+    group: "Transfer Equivalency Config"
     steps:
       1:
-        flow: dev_org
+        task: generate_dataset_mapping
+        options:
+          path: datasets/dev/mapping.yml
       2:
-        task: test_data_dev_org
+        task: extract_dataset
+        options:
+          mapping: datasets/dev/mapping.yml
+          sql_path: datasets/dev/test_data.sql
