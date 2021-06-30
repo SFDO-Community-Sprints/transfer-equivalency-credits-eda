@@ -17,17 +17,17 @@ https://powerofus.force.com/s/group/0F91E000000brOzSAI/transfer-equivalency
 ### Project Team
 Help us give you the thanks you deserve and ensure future contributors know who to contact if they have questions! Please ensure that all contributing members of the team are included.
 * Team Leader(s): 
-Peter Bernardi, Elevate Actual
-Kathy Lueckeman, Olivet Nazarene University (https://github.com/Kathy-Lueckeman), 
+Peter Bernardi, Elevate Actual; 
+Kathy Lueckeman, Olivet Nazarene University (https://github.com/Kathy-Lueckeman); 
 Riley Schill, GoStratus
 
-* Team Members
-Matthew Blanski, Salesforce.org
-Andy Corbus, Olivet Nazarene University
-Emma Hutchinson, Coastal Cloud
-Emily Rector, Traction on Demand
-Steph Sisson, EDACS
-Corey Snow, Salsforce.org
+* June 2021 AMER Team Members
+Matthew Blanski, Salesforce.org; 
+Andy Corbus, Olivet Nazarene University; 
+Emma Hutchinson, Coastal Cloud; 
+Emily Rector, Traction on Demand; 
+Steph Sisson, EDACS; 
+Corey Snow, Salsforce.org; 
 
 The team adopted the vision from previous sprints. It updated the ERD from the Detroit sprint to reflect the new objects added at but not documented during the Philly sprint.
 
