@@ -54,7 +54,6 @@
         <members>Transcript_Course__c</members>
         <members>Transcript__c</members>
         <members>Transfer_Credit_Search</members>
-        <members>hed__Error__c</members>
         <name>CustomTab</name>
     </types>
     <types>
@@ -78,7 +77,6 @@
         <members>Course_Transfer__c.All</members>
         <members>Transcript_Course__c.All</members>
         <members>Transcript__c.All</members>
-        <members>hed__Error__c.All</members>
         <name>ListView</name>
     </types>
     <types>
