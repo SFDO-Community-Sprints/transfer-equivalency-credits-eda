@@ -43,8 +43,9 @@ flows:
         task: deploy_dev_config
 
   config_qa:
-    1.1:
-      task: deploy_qa_config
+    steps:
+      1.1:
+        task: deploy_qa_config
 
   dev_org_with_data:
     steps:
