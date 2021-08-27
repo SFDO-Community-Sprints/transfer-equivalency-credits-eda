@@ -153,7 +153,17 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <fields>
+    <label>Course Transfer</label>
+    <nameField>
+        <displayFormat>CT-{000000}</displayFormat>
+        <label>Course Transfer Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Course Transfers</pluralLabel>
+    <searchLayouts></searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Course__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -165,7 +175,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Credits__c</fullName>
         <description>TBD</description>
         <externalId>false</externalId>
@@ -177,7 +187,7 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>End_Date__c</fullName>
         <description>TBD</description>
         <externalId>false</externalId>
@@ -186,7 +196,7 @@
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>External_Course__c</fullName>
         <description>TBD</description>
         <externalId>false</externalId>
@@ -200,7 +210,7 @@
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Grade_Requirement__c</fullName>
         <description>TBD</description>
         <externalId>false</externalId>
@@ -211,7 +221,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Plan_Requirement__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>TBD</description>
@@ -224,7 +234,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Start_Date__c</fullName>
         <description>TBD</description>
         <externalId>false</externalId>
@@ -233,7 +243,7 @@
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Status__c</fullName>
         <description>TBD</description>
         <externalId>false</externalId>
@@ -258,21 +268,12 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <label>Course Transfer</label>
-    <listViews>
+    <listViews xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
-    <nameField>
-        <displayFormat>CT-{000000}</displayFormat>
-        <label>Course Transfer Name</label>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Course Transfers</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
-    <validationRules>
+    <validationRules xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Course_or_Plan_Requirement_Not_Both</fullName>
         <active>true</active>
         <description>Specify a Course or Plan Requirement that the external course transfers into, but not both.</description>
@@ -283,5 +284,4 @@
 NOT (ISBLANK(Plan_Requirement__c))</errorConditionFormula>
         <errorMessage>Specify a Course or Plan Requirement that the external course transfers into, but not both.</errorMessage>
     </validationRules>
-    <visibility>Public</visibility>
 </CustomObject>
