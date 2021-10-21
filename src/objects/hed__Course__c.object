@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Course_Equivalency_Rule__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>Rule that determines equivalency for a course</description>
@@ -13,12 +13,12 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <recordTypes>
+    <recordTypes xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>External</fullName>
         <active>true</active>
         <label>External</label>
     </recordTypes>
-    <recordTypes>
+    <recordTypes xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Internal</fullName>
         <active>true</active>
         <label>Internal</label>

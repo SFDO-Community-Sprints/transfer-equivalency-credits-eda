@@ -153,7 +153,17 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <fields>
+    <label>Transcript Course</label>
+    <nameField>
+        <displayFormat>TXC-{00000}</displayFormat>
+        <label>Transcript Course Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Transcript Courses</pluralLabel>
+    <searchLayouts></searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Approval_Status__c</fullName>
         <externalId>false</externalId>
         <label>Approval Status</label>
@@ -192,7 +202,7 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Awarded_Credit_Hour__c</fullName>
         <externalId>false</externalId>
         <label>Awarded Credit Hours</label>
@@ -203,7 +213,7 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Course_Equivalent__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -224,7 +234,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Course_to_be_Evaluated__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -245,7 +255,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>End_Date__c</fullName>
         <externalId>false</externalId>
         <label>End Date</label>
@@ -253,7 +263,7 @@
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Start_Date__c</fullName>
         <externalId>false</externalId>
         <label>Start Date</label>
@@ -261,7 +271,7 @@
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Term__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -273,7 +283,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Transcript__c</fullName>
         <externalId>false</externalId>
         <label>Transcript</label>
@@ -286,14 +296,9 @@
         <type>MasterDetail</type>
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
-    <label>Transcript Course</label>
-    <nameField>
-        <displayFormat>TXC-{00000}</displayFormat>
-        <label>Transcript Course Name</label>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Transcript Courses</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
-    <visibility>Public</visibility>
+    <listViews xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
 </CustomObject>
