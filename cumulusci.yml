@@ -36,6 +36,30 @@ tasks:
       sql_path: datasets/dev/test_data.sql
       mapping: datasets/dev/mapping.yml
 
+  deploy_flow_action_base:
+    description: Deploy Flow Actions Base Package
+    class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+    options:
+      command: 'force:package:install --wait 10 --publishwait 10 --package 04t4W0000034L7VQAU'
+
+  deploy_flow_screen_components_base:
+    description: Deploy Flow Screen Components Base Package
+    class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+    options:
+      command: 'force:package:install --wait 10 --publishwait 10 --package 04t5G000003rUenQAE'
+
+  deploy_datatable:
+    description: Deploy Datatable Package
+    class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+    options:
+      command: 'force:package:install --wait 10 --publishwait 10 --package 04t5G000003rUaWQAU'
+
+  deploy_quick_lookup:
+    description: Deploy Quick Lookup Package
+    class_path: cumulusci.tasks.sfdx.SFDXOrgTask
+    options:
+      command: 'force:package:install --wait 10 --publishwait 10 --package 04t5G000003rUcDQAU'
+
 flows:
   config_dev:
     steps:
@@ -53,6 +77,15 @@ flows:
     steps:
       3.1:
         task: test_data_dev_org
+      4.1:
+        task: deploy_flow_action_base
+      5.1:
+        task: deploy_flow_screen_components_base
+      6.1:
+        task: deploy_datatable
+      7.1:
+        task: deploy_quick_lookup
+
 
   update_test_data:
     description: Pulls the dataset mapping and data from the current org and saves it to the dev dataset folder

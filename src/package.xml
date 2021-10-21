@@ -8,6 +8,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>Transfer_Equivalency_Credits</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>Account.TE_Available_for_Course_Transfers__c</members>
         <members>Course_Equivalency_Rules__c.Course__c</members>
         <members>Course_Equivalency_Rules__c.External_Course__c</members>
@@ -18,6 +22,7 @@
         <members>Course_Transfer__c.Credits__c</members>
         <members>Course_Transfer__c.End_Date__c</members>
         <members>Course_Transfer__c.External_Course__c</members>
+        <members>Course_Transfer__c.External_Course_Name__c</members>
         <members>Course_Transfer__c.Grade_Requirement__c</members>
         <members>Course_Transfer__c.Plan_Requirement__c</members>
         <members>Course_Transfer__c.Start_Date__c</members>
@@ -61,6 +66,11 @@
         <name>FlexiPage</name>
     </types>
     <types>
+        <members>Display_Pre_Approved_Course_Transfers</members>
+        <members>Search_Account_for_External_Course_Flow</members>
+        <name>Flow</name>
+    </types>
+    <types>
         <members>Course_Equivalency_Rules__c-Course Equivalency Rule Layout</members>
         <members>Course_Transfer__c-Course Transfer Layout</members>
         <members>Transcript_Course__c-Transcript Course Layout</members>
@@ -78,6 +88,14 @@
         <members>Transcript_Course__c.All</members>
         <members>Transcript__c.All</members>
         <name>ListView</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
+    </types>
+    <types>
+        <members>Transcript__c.Course_Transfers</members>
+        <name>QuickAction</name>
     </types>
     <types>
         <members>hed__Course__c.External</members>
