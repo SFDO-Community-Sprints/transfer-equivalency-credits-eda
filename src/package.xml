@@ -49,7 +49,10 @@
         <name>CustomObject</name>
     </types>
     <types>
+        <members>Course_Equivalency_Rules__c</members>
         <members>Course_Transfer__c</members>
+        <members>Transcript_Course__c</members>
+        <members>Transcript__c</members>
         <members>Transfer_Credit_Search</members>
         <name>CustomTab</name>
     </types>
@@ -72,6 +75,8 @@
     <types>
         <members>Course_Equivalency_Rules__c.All</members>
         <members>Course_Transfer__c.All</members>
+        <members>Transcript_Course__c.All</members>
+        <members>Transcript__c.All</members>
         <name>ListView</name>
     </types>
     <types>

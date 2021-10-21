@@ -154,7 +154,17 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
-    <fields>
+    <label>Course Equivalency Rule</label>
+    <nameField>
+        <displayFormat>CER-{0000}</displayFormat>
+        <label>External Course Record Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Course Equivalency Rules</pluralLabel>
+    <searchLayouts></searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Course__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>The course that is related to the rule</description>
@@ -167,7 +177,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>External_Course__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <description>The External Course Record that ties to an individual course.</description>
@@ -180,7 +190,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Required_Grade__c</fullName>
         <description>The required gpa for a course to transfer</description>
         <externalId>false</externalId>
@@ -192,7 +202,7 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Rule_End_Date__c</fullName>
         <description>The end date for which the rule is valid (i.e. all courses taken through August 2012)</description>
         <externalId>false</externalId>
@@ -201,7 +211,7 @@
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Rule_Start_Date__c</fullName>
         <description>The start date for which the rule is valid (i.e. all courses taken starting August 2012)</description>
         <externalId>false</externalId>
@@ -210,19 +220,9 @@
         <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
-    <label>Course Equivalency Rule</label>
-    <listViews>
+    <listViews xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
-    <nameField>
-        <displayFormat>CER-{0000}</displayFormat>
-        <label>External Course Record Name</label>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Course Equivalency Rules</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
 </CustomObject>
