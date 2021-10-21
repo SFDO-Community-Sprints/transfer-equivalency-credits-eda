@@ -201,6 +201,16 @@
         <writeRequiresMasterRead>false</writeRequiresMasterRead>
     </fields>
     <fields>
+        <fullName>External_Course_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>External_Course__r.Name</formula>
+        <label>External Course Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Grade_Requirement__c</fullName>
         <description>TBD</description>
         <externalId>false</externalId>
