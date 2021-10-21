@@ -153,7 +153,17 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ReadWrite</externalSharingModel>
-    <fields>
+    <label>Transcript</label>
+    <nameField>
+        <displayFormat>TX-{00000}</displayFormat>
+        <label>Transcript Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Transcripts</pluralLabel>
+    <searchLayouts></searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Application__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -165,7 +175,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Contact__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -177,7 +187,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Credit_Hours__c</fullName>
         <externalId>false</externalId>
         <label>Credit Hours</label>
@@ -188,7 +198,7 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Decision_Status__c</fullName>
         <externalId>false</externalId>
         <label>Decision Status</label>
@@ -217,7 +227,7 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Education_Institutions__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -238,7 +248,7 @@
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>GPA__c</fullName>
         <externalId>false</externalId>
         <label>GPA</label>
@@ -249,7 +259,7 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
-    <fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Total_Awarded_Credit_Hours__c</fullName>
         <externalId>false</externalId>
         <label>Total Awarded Credit Hours</label>
@@ -259,14 +269,9 @@
         <trackTrending>false</trackTrending>
         <type>Summary</type>
     </fields>
-    <label>Transcript</label>
-    <nameField>
-        <displayFormat>TX-{00000}</displayFormat>
-        <label>Transcript Name</label>
-        <type>AutoNumber</type>
-    </nameField>
-    <pluralLabel>Transcripts</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
+    <listViews xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
 </CustomObject>
