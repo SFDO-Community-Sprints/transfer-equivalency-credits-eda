@@ -8,6 +8,10 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>Transfer_Equivalency_Credits</members>
+        <name>CustomApplication</name>
+    </types>
+    <types>
         <members>Account.TE_Available_for_Course_Transfers__c</members>
         <members>Course_Equivalency_Rules__c.Course__c</members>
         <members>Course_Equivalency_Rules__c.External_Course__c</members>
@@ -78,6 +82,10 @@
         <members>Transcript_Course__c.All</members>
         <members>Transcript__c.All</members>
         <name>ListView</name>
+    </types>
+    <types>
+        <members>Admin</members>
+        <name>Profile</name>
     </types>
     <types>
         <members>hed__Course__c.External</members>

@@ -5,6 +5,11 @@
         <default>false</default>
         <visible>true</visible>
     </applicationVisibilities>
+    <applicationVisibilities>
+        <application>Transfer_Equivalency_Credits</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
     <layoutAssignments>
         <layout>Account-hed__HEDA Organization Layout</layout>
     </layoutAssignments>
