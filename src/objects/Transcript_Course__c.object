@@ -264,6 +264,16 @@
         <type>Date</type>
     </fields>
     <fields xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>External_Educational_Institution__c</fullName>
+        <externalId>false</externalId>
+        <formula>Course_to_be_Evaluated__r.hed__Account__r.Parent.Name</formula>
+        <label>External Educational Institution</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>Start_Date__c</fullName>
         <externalId>false</externalId>
         <label>Start Date</label>
