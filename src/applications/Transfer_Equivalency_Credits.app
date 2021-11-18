@@ -20,7 +20,6 @@
     <tabs>hed__Program_Plan__c</tabs>
     <tabs>hed__Plan_Requirement__c</tabs>
     <uiType>Lightning</uiType>
-    <utilityBar>Transfer_Equivalency_Credits_UtilityBar</utilityBar>
     <workspaceConfig>
         <mappings>
             <tab>Course_Equivalency_Rules__c</tab>
