@@ -21,8 +21,8 @@
         <members>Course_Transfer__c.Course__c</members>
         <members>Course_Transfer__c.Credits__c</members>
         <members>Course_Transfer__c.End_Date__c</members>
-        <members>Course_Transfer__c.External_Course__c</members>
         <members>Course_Transfer__c.External_Course_Name__c</members>
+        <members>Course_Transfer__c.External_Course__c</members>
         <members>Course_Transfer__c.Grade_Requirement__c</members>
         <members>Course_Transfer__c.Plan_Requirement__c</members>
         <members>Course_Transfer__c.Start_Date__c</members>
@@ -88,10 +88,6 @@
         <members>Transcript_Course__c.All</members>
         <members>Transcript__c.All</members>
         <name>ListView</name>
-    </types>
-    <types>
-        <members>Admin</members>
-        <name>Profile</name>
     </types>
     <types>
         <members>Transcript__c.Course_Transfers</members>
