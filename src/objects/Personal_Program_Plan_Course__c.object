@@ -143,8 +143,7 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <description>TBD</description>
-    <enableActivities>true</enableActivities>
+    <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
@@ -153,112 +152,21 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <label>Course Transfer</label>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <label>Personal Program Plan Course</label>
     <nameField>
-        <displayFormat>CT-{000000}</displayFormat>
-        <label>Course Transfer Name</label>
-        <type>AutoNumber</type>
+        <label>Personal Program Plan Course Name</label>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Course Transfers</pluralLabel>
+    <pluralLabel>Personal Program Plan Courses</pluralLabel>
     <searchLayouts></searchLayouts>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>Course__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
+        <fullName>Approval_Status__c</fullName>
         <externalId>false</externalId>
-        <label>Course</label>
-        <referenceTo>hed__Course__c</referenceTo>
-        <relationshipLabel>Course Transfers (Course)</relationshipLabel>
-        <relationshipName>Course_Transfers1</relationshipName>
+        <label>Approval Status</label>
         <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>Credits__c</fullName>
-        <description>TBD</description>
-        <externalId>false</externalId>
-        <label>Credits</label>
-        <precision>6</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>End_Date__c</fullName>
-        <description>TBD</description>
-        <externalId>false</externalId>
-        <label>End Date</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>External_Course_Name__c</fullName>
-        <externalId>false</externalId>
-        <formula>External_Course__r.Name</formula>
-        <label>External Course Name</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>External_Course__c</fullName>
-        <description>TBD</description>
-        <externalId>false</externalId>
-        <label>External Course</label>
-        <referenceTo>hed__Course__c</referenceTo>
-        <relationshipLabel>Course Transfers</relationshipLabel>
-        <relationshipName>Course_Transfers</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>Grade_Requirement__c</fullName>
-        <description>TBD</description>
-        <externalId>false</externalId>
-        <label>Grade Requirement</label>
-        <length>255</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>Plan_Requirement__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
-        <description>TBD</description>
-        <externalId>false</externalId>
-        <label>Plan Requirement</label>
-        <referenceTo>hed__Plan_Requirement__c</referenceTo>
-        <relationshipLabel>Course Transfers</relationshipLabel>
-        <relationshipName>Course_Transfers</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>Start_Date__c</fullName>
-        <description>TBD</description>
-        <externalId>false</externalId>
-        <label>Start Date</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>Status__c</fullName>
-        <description>TBD</description>
-        <externalId>false</externalId>
-        <label>Status</label>
-        <required>true</required>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
@@ -266,32 +174,126 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>Active</fullName>
-                    <default>false</default>
-                    <label>Active</label>
+                    <fullName>Not Started</fullName>
+                    <default>true</default>
+                    <label>Not Started</label>
                 </value>
                 <value>
-                    <fullName>Inactive</fullName>
+                    <fullName>In Progress</fullName>
                     <default>false</default>
-                    <label>Inactive</label>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Not Approved</fullName>
+                    <default>false</default>
+                    <label>Not Approved</label>
+                </value>
+                <value>
+                    <fullName>Referred to Committee</fullName>
+                    <default>false</default>
+                    <label>Referred to Committee</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Awarded_Credit_Hour__c</fullName>
+        <externalId>false</externalId>
+        <label>Awarded Credit Hours</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Course_Equivalent__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Course Equivalent</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>hed__Course__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Internal</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>hed__Course__c</referenceTo>
+        <relationshipName>Course_Equivalent</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Course_to_be_Evaluated__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Course to be Evaluated</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>hed__Course__c.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>External</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>hed__Course__c</referenceTo>
+        <relationshipName>Transcript_Courses</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Education_History__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Education History</label>
+        <referenceTo>Personal_Program_Plan_Course__c</referenceTo>
+        <relationshipLabel>Education History</relationshipLabel>
+        <relationshipName>Education_History</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields xmlns="http://soap.sforce.com/2006/04/metadata">
+        <fullName>Term__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Term</label>
+        <referenceTo>hed__Term__c</referenceTo>
+        <relationshipName>Transcript_Courses</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <listViews xmlns="http://soap.sforce.com/2006/04/metadata">
         <fullName>All</fullName>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
-    <validationRules xmlns="http://soap.sforce.com/2006/04/metadata">
-        <fullName>Course_or_Plan_Requirement_Not_Both</fullName>
-        <active>true</active>
-        <description>Specify a Course or Plan Requirement that the external course transfers into, but not both.</description>
-        <errorConditionFormula>NOT (ISBLANK (Course__c))
-
-&amp;&amp;
-
-NOT (ISBLANK(Plan_Requirement__c))</errorConditionFormula>
-        <errorMessage>Specify a Course or Plan Requirement that the external course transfers into, but not both.</errorMessage>
-    </validationRules>
 </CustomObject>
