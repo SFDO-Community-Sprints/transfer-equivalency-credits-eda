@@ -21,12 +21,21 @@
         <members>Course_Transfer__c.Course__c</members>
         <members>Course_Transfer__c.Credits__c</members>
         <members>Course_Transfer__c.End_Date__c</members>
-        <members>Course_Transfer__c.External_Course__c</members>
         <members>Course_Transfer__c.External_Course_Name__c</members>
+        <members>Course_Transfer__c.External_Course__c</members>
         <members>Course_Transfer__c.Grade_Requirement__c</members>
         <members>Course_Transfer__c.Plan_Requirement__c</members>
         <members>Course_Transfer__c.Start_Date__c</members>
         <members>Course_Transfer__c.Status__c</members>
+        <members>Personal_Program_Plan_Course__c.Approval_Status__c</members>
+        <members>Personal_Program_Plan_Course__c.Awarded_Credit_Hour__c</members>
+        <members>Personal_Program_Plan_Course__c.Contact__c</members>
+        <members>Personal_Program_Plan_Course__c.Course_Equivalent__c</members>
+        <members>Personal_Program_Plan_Course__c.Course_to_be_Evaluated__c</members>
+        <members>Personal_Program_Plan_Course__c.Education_History__c</members>
+        <members>Personal_Program_Plan_Course__c.End_Date__c</members>
+        <members>Personal_Program_Plan_Course__c.Start_Date__c</members>
+        <members>Personal_Program_Plan_Course__c.Term__c</members>
         <members>Transcript_Course__c.Approval_Status__c</members>
         <members>Transcript_Course__c.Awarded_Credit_Hour__c</members>
         <members>Transcript_Course__c.Course_Equivalent__c</members>
@@ -44,11 +53,17 @@
         <members>Transcript__c.Total_Awarded_Credit_Hours__c</members>
         <members>hed__Application__c.Transcript_Evaluation_Status__c</members>
         <members>hed__Course__c.Course_Equivalency_Rule__c</members>
+        <members>hed__Education_History__c.Official_Degree_Awarded__c</members>
+        <members>hed__Education_History__c.Official_Final_No_Degree__c</members>
+        <members>hed__Education_History__c.Official_In_Progress__c</members>
+        <members>hed__Education_History__c.Unofficial_Degree_Awarded__c</members>
+        <members>hed__Education_History__c.Unofficial_In_Progress__c</members>
         <name>CustomField</name>
     </types>
     <types>
         <members>Course_Equivalency_Rules__c</members>
         <members>Course_Transfer__c</members>
+        <members>Personal_Program_Plan_Course__c</members>
         <members>Transcript_Course__c</members>
         <members>Transcript__c</members>
         <name>CustomObject</name>
@@ -73,9 +88,12 @@
     <types>
         <members>Course_Equivalency_Rules__c-Course Equivalency Rule Layout</members>
         <members>Course_Transfer__c-Course Transfer Layout</members>
+        <members>Personal_Program_Plan_Course__c-Personal Program Plan Course Layout</members>
         <members>Transcript_Course__c-Transcript Course Layout</members>
         <members>Transcript__c-Transcript Layout</members>
         <members>hed__Course__c-HEDA External Course Layout</members>
+        <members>hed__Course__c-hed__HEDA Course Layout</members>
+        <members>hed__Education_History__c-hed__EDA Education History Layout</members>
         <name>Layout</name>
     </types>
     <types>
@@ -85,13 +103,10 @@
     <types>
         <members>Course_Equivalency_Rules__c.All</members>
         <members>Course_Transfer__c.All</members>
+        <members>Personal_Program_Plan_Course__c.All</members>
         <members>Transcript_Course__c.All</members>
         <members>Transcript__c.All</members>
         <name>ListView</name>
-    </types>
-    <types>
-        <members>Admin</members>
-        <name>Profile</name>
     </types>
     <types>
         <members>Transcript__c.Course_Transfers</members>
