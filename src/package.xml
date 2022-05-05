@@ -29,6 +29,7 @@
         <members>Course_Transfer__c.Status__c</members>
         <members>Personal_Program_Plan_Course__c.Approval_Status__c</members>
         <members>Personal_Program_Plan_Course__c.Awarded_Credit_Hour__c</members>
+        <members>Personal_Program_Plan_Course__c.Contact__c</members>
         <members>Personal_Program_Plan_Course__c.Course_Equivalent__c</members>
         <members>Personal_Program_Plan_Course__c.Course_to_be_Evaluated__c</members>
         <members>Personal_Program_Plan_Course__c.Education_History__c</members>
