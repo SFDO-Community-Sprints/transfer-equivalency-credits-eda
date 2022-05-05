@@ -247,7 +247,8 @@
             <isOptional>false</isOptional>
         </lookupFilter>
         <referenceTo>hed__Course__c</referenceTo>
-        <relationshipName>Transcript_Courses</relationshipName>
+        <relationshipLabel>Personal Program Plan Courses (Course to be Evaluated)</relationshipLabel>
+        <relationshipName>Personal_Program_Plan_Courses</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
